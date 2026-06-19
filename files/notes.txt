@@ -1,0 +1,22 @@
+
+
+app.get( path, callback ); callback= req + res ; req-> header, body || 
+res -> response -> json, status, send
+
+
+Middlewares 'app.use'
+    - functions that process requests before reaching the routes eg logging,auth checks
+        Parsing (JSON ==> Js object)
+app.use(express.json()) Must have for request
+
+
+__filename vs __dirname
+    provides the absolute path of the current script file itself (e.g., server.js).
+
+
+app.use(express.static(...)) -- serving entire folders of public assets,
+        You want URLs to match your folder structure exactly 
+        (e.g., a file at public/images/logo.png is automatically served at /images/logo.png)
+res.sendFile() ---> single specific file under precise routing rules.
+
+
