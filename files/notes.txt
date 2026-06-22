@@ -19,4 +19,7 @@ app.use(express.static(...)) -- serving entire folders of public assets,
         (e.g., a file at public/images/logo.png is automatically served at /images/logo.png)
 res.sendFile() ---> single specific file under precise routing rules.
 
+.env :  Communicating with the file
+require('dotenv').config();
+ 
 
