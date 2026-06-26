@@ -21,5 +21,11 @@ res.sendFile() ---> single specific file under precise routing rules.
 
 .env :  Communicating with the file
 require('dotenv').config();
+
+
+        const todoExists = todos.some((todo) => todo.title === title ); // True or False
+        .find() return a value.
+        .filter() returns an array.
+
  
 
